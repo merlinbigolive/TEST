@@ -1,27 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0d0d0c">
-<title>VYORA — Book trusted help by the hour</title>
-<meta name="description" content="Book verified helpers and professionals across India by the hour, half-day, full-day, week or month.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#14251f">
+  <meta name="description" content="A private spa experience reserved exclusively for hotel guests.">
+  <title>ÉLAN Spa — A Private Hotel Spa Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="topbar"><a class="brand" href="#home"><span class="brand-mark">V</span><span>VYORA<small>HELP, WHEN YOU NEED IT</small></span></a><nav class="main-nav"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#how">How it works</a><a href="#safety">Trust & safety</a></nav><div class="top-actions"><button class="text-btn" data-open="loginModal">Log in</button><button class="btn btn-gold btn-small" data-open="signupModal">Join VYORA <span>↗</span></button><button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button></div></header>
-<main>
-<section class="hero" id="home"><video id="heroBackgroundVideo" class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="./hero-poster.jpg" aria-hidden="true"><source src="./hero-background.mp4" type="video/mp4"></video><div class="hero-shade"></div><div class="hero-content"><div class="eyebrow"><i></i> INDIA'S EVERYDAY WORK BOOKING PLATFORM</div><h1>Everyday help.<br><em>On your time.</em></h1><p class="hero-copy">From grocery shopping and cooking to office support, patient assistance, drivers, events and wellness — find the right person for the work you need done.</p><div class="hero-ctas"><a class="btn btn-gold" href="#services">Explore services <span>↗</span></a><button class="btn btn-outline" data-open="signupModal">Become a worker</button></div><div class="hero-note"><span class="gold-dot"></span> India only <span class="note-sep">·</span> Clear upfront pricing <span class="note-sep">·</span> Flexible booking durations</div></div><div class="hero-side"><span>THE VYORA STANDARD</span><b>01 — 08</b></div><div class="hero-bottom"><span>HELP FOR HOME, WORK & EVERYDAY LIFE</span><span>SCROLL TO EXPLORE ↓</span></div></section>
-<section class="trust-strip"><div><b>01</b><span>Choose your work</span></div><div><b>02</b><span>See prices upfront</span></div><div><b>03</b><span>Pick your time</span></div><div><b>04</b><span>Book a professional</span></div></section>
-<section class="section intro" id="services"><div class="section-kicker">ONE PLATFORM · MANY SOLUTIONS</div><div class="intro-grid"><h2>Find help for<br><em>the work that matters.</em></h2><div><p class="lead">Book people for everyday tasks, temporary shifts and professional services — all in one place.</p><p class="muted">Choose a category, compare service charges, select a duration and send a booking request to an available worker. VYORA launches in India, with state and city-based discovery.</p></div></div><div class="category-grid" id="categoryGrid"></div><p class="tiny-note">Service availability varies by city. Regulated work is shown only for appropriately qualified and verified professionals.</p></section>
-<section class="section pricing-section" id="pricing"><div class="section-head"><div><div class="section-kicker">TRANSPARENT SERVICE CHARGES</div><h2>Know the price<br><em>before you book.</em></h2></div><p class="muted head-copy">Each service has its own rate. Choose a duration to see the suggested starting price. Shopping bills, materials and travel extras are separate.</p></div><div class="price-explorer"><div class="form-grid"><label>Work category<select id="priceCategory"></select></label><label>Choose service<select id="priceService"></select></label></div><div class="price-duration-tabs" id="priceDurationTabs"><button data-duration="1" class="active">1 hr</button><button data-duration="2">2 hr</button><button data-duration="3">3 hr</button><button data-duration="4">4 hr</button><button data-duration="5">5 hr</button><button data-duration="6">6 hr</button><button data-duration="8">8 hr</button><button data-duration="week">1 week</button><button data-duration="fortnight">2 weeks</button><button data-duration="month">1 month</button></div><div class="price-result"><div><span class="section-kicker">SUGGESTED SERVICE CHARGE</span><strong id="priceValue">₹150</strong><small id="priceCaption">For 1 hour · per worker</small></div><span class="price-note">INR · India launch rates</span></div><p class="tiny-note">Weekly package assumes 6 working days × 8 hours/day; 2 weeks assumes 12 working days; monthly assumes 26 working days. Package discounts are indicative and can be changed by admin.</p></div></section>
-<section class="section slots-section"><div class="section-kicker">SIMPLE FIXED BOOKING WINDOWS</div><h2>Choose your<br><em>time slot.</em></h2><div class="slot-grid"><article class="slot-card"><span>01 / MORNING</span><h3>8:00 AM – 2:00 PM</h3><b>6 hours</b></article><article class="slot-card"><span>02 / EVENING</span><h3>2:00 PM – 8:00 PM</h3><b>6 hours</b></article><article class="slot-card slot-highlight"><span>03 / FULL DAY</span><h3>8:00 AM – 4:00 PM</h3><b>8 hours</b></article></div><p class="tiny-note">For 1–5 hour bookings, the selected work must fit within the chosen booking window. Weekly and longer bookings use the 8 AM–4 PM daily shift unless the worker profile states otherwise.</p><button class="btn btn-gold" data-open="signupModal">Start a booking ↗</button></section>
-<section class="section how" id="how"><div class="section-kicker">HOW VYORA WORKS</div><h2>Four steps to<br><em>get it done.</em></h2><div class="steps"><article><b>01</b><h3>Choose a service</h3><p>Browse work categories and select the exact help you need.</p></article><article><b>02</b><h3>Set your schedule</h3><p>Select your city, date, fixed time slot and booking duration.</p></article><article><b>03</b><h3>Review & request</h3><p>See the service charge and send a request to an available worker.</p></article><article><b>04</b><h3>Complete the work</h3><p>Confirm completion and view your booking history.</p></article></div></section>
-<section class="hotel-banner" id="safety"><div><div class="section-kicker">TRUST, SAFETY & CLEAR EXPECTATIONS</div><h2>People first.<br><em>Safety always.</em></h2><p>Workers are subject to identity and profile checks before public approval. Patient care, driving, medicine handling and other regulated tasks require relevant qualifications, licences or prescriptions. All work must be lawful, consensual and clearly described.</p><button class="btn btn-gold" data-open="signupModal">Join VYORA ↗</button></div></section>
-<section class="section faq"><div><div class="section-kicker">GOOD TO KNOW</div><h2>Clear answers.<br><em>Better bookings.</em></h2></div><div class="faq-list"><details open><summary>Are shopping items included in the service charge?<span>＋</span></summary><p>No. Grocery, vegetable, fruit, meat, fish and medicine purchases are paid separately by the customer. The worker's service fee is shown separately.</p></details><details><summary>What booking durations are available?<span>＋</span></summary><p>1 to 5 hours, the 6-hour morning or evening slot, the 8-hour full-day slot, 1 week, 2 weeks and 1 month.</p></details><details><summary>Can I book a patient caregiver or driver?<span>＋</span></summary><p>Yes, subject to city availability and verification of relevant training, qualifications or a valid driving licence. Medical procedures are limited to appropriately qualified professionals.</p></details><details><summary>Are these live prices and worker listings?<span>＋</span></summary><p>This ZIP is a front-end preview. Prices are suggested starting rates and profiles/availability are demo-only until a secure backend and verified worker network are connected.</p></details><details><summary>Does VYORA transfer worker earnings automatically?<span>＋</span></summary><p>No automatic payout is configured in this preview. The intended workflow is worker payout request, admin review and manual transfer with a transaction record.</p></details></div></section>
-</main>
-<footer class="footer"><div class="footer-main"><a class="brand" href="#home"><span class="brand-mark">V</span><span>VYORA<small>HELP, WHEN YOU NEED IT</small></span></a><p>Everyday help, booked<br>with clarity and care.</p><div class="footer-links"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#how">How it works</a><a href="#safety">Trust & safety</a><button class="footer-admin" id="adminShortcut">Admin preview ↗</button></div></div><div class="footer-bottom"><span>© 2026 VYORA. Website preview.</span><span>India only · Legal services only · Terms · Privacy</span></div></footer>
-<div class="modal-backdrop" id="loginModal"><section class="modal"><button class="modal-close" data-close>×</button><div class="section-kicker">WELCOME BACK</div><h2>Log in to <em>VYORA.</em></h2><div class="role-tabs"><button class="active" data-role="customer">Client</button><button data-role="worker">Worker</button><button data-role="admin">Admin</button></div><form id="loginForm"><label>Email address<input type="email" placeholder="you@example.com" required></label><label>Password<input type="password" placeholder="Enter password" required></label><button class="btn btn-gold full" type="submit">Continue ↗</button></form><p class="form-foot">Preview only — connect secure authentication before launch.</p></section></div>
-<div class="modal-backdrop" id="signupModal"><section class="modal"><button class="modal-close" data-close>×</button><div class="section-kicker">YOUR VYORA ACCOUNT</div><h2>Join the <em>community.</em></h2><div class="role-tabs"><button class="active" data-signup-role="customer">Client</button><button data-signup-role="worker">Worker</button></div><form id="signupForm"><label>Full name<input name="fullName" required autocomplete="name" placeholder="Your full name"></label><div class="form-grid"><label>Email address<input name="email" type="email" required placeholder="you@example.com"></label><label>Mobile number<input name="phone" type="tel" inputmode="tel" required placeholder="+91 mobile number"></label><label>State<select name="state" id="signupState" required><option value="">Select state</option></select></label><label>City<input name="city" required placeholder="Your city"></label></div><label>Create password<input name="password" type="password" minlength="8" required placeholder="At least 8 characters"></label><label class="check-label"><input type="checkbox" required> I confirm I am 18 or older and agree to the Terms and Privacy Policy.</label><button class="btn btn-gold full" type="submit">Create demo account ↗</button></form><p class="form-foot">Aadhaar OTP verification is not connected in this preview. Production verification must use an authorised provider; do not submit Aadhaar details here.</p></section></div>
-<div class="modal-backdrop" id="dashboardModal"><section class="modal modal-wide"><button class="modal-close" data-close>×</button><div id="dashboardContent"></div></section></div>
-<div class="toast" id="toast"></div><script src="app.js"></script>
-</body></html>
+  <div class="announcement"><span class="dot"></span> AN EXCLUSIVE WELLNESS EXPERIENCE · RESERVED FOR IN-HOUSE HOTEL GUESTS</div>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Élan Spa home"><span class="brand-mark">É</span><span>ÉLAN <small>HOTEL SPA</small></span></a>
+    <nav class="nav" id="nav">
+      <a href="#experience">Experience</a><a href="#treatments">Treatments</a><a href="#ritual">Our Ritual</a>
+    </nav>
+    <a class="nav-cta" href="#booking">Reserve a session <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">YOUR PRIVATE MOMENT OF CALM</p>
+        <h1>Leave the world<br><em>at the door.</em></h1>
+        <p class="hero-copy">A considered collection of spa rituals, crafted to restore your rhythm and reserved exclusively for guests staying at the hotel.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#booking">Discover your treatment <span>↗</span></a><a class="text-link" href="#experience">Explore the experience <span>↓</span></a></div>
+      </div>
+      <div class="hero-note"><span>01 / 03</span><span class="line"></span><span>THE ART OF UNWINDING</span></div>
+      <div class="vertical-label">PRIVATE SPA · HOTEL GUESTS ONLY</div>
+    </section>
+
+    <section class="intro section" id="experience">
+      <div class="intro-kicker"><span class="small-line"></span> A MORE PERSONAL KIND OF WELLNESS</div>
+      <div class="intro-grid">
+        <h2>Time, returned<br>to <em>you.</em></h2>
+        <div class="intro-text"><p class="lead">Step away from the pace of travel and into a quieter kind of luxury.</p><p>At ÉLAN, every detail is designed around your stay. From restorative massages to thoughtfully layered body rituals, our spa offers a calm, private retreat just moments from your room.</p><div class="guest-tag"><span>✳</span> Exclusively available to registered hotel guests</div></div>
+      </div>
+      <div class="stats">
+        <div><strong>01</strong><span>Personalised<br>wellness journey</span></div>
+        <div><strong>02</strong><span>Expert hands,<br>thoughtful care</span></div>
+        <div><strong>03</strong><span>A sanctuary<br>within your stay</span></div>
+      </div>
+    </section>
+
+    <section class="treatments section" id="treatments">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE TREATMENT EDIT</p><h2>Choose your way<br>to <em>unwind.</em></h2></div>
+        <p class="heading-side">A selection of signature experiences to help you slow down, reset and feel renewed.</p>
+      </div>
+      <div class="treatment-grid">
+        <article class="treatment-card card-large">
+          <div class="treatment-photo photo-one"><span class="number">01</span></div>
+          <div class="treatment-info"><div><h3>Signature Massage</h3><p>A flowing, full-body treatment to release tension and invite deep relaxation.</p></div><span class="duration">60 / 90 MIN</span></div>
+        </article>
+        <article class="treatment-card">
+          <div class="treatment-photo photo-two"><span class="number">02</span></div>
+          <div class="treatment-info"><div><h3>Deep Tissue Therapy</h3><p>Focused pressure and expert techniques for tired, overworked muscles.</p></div><span class="duration">60 / 90 MIN</span></div>
+        </article>
+        <article class="treatment-card">
+          <div class="treatment-photo photo-three"><span class="number">03</span></div>
+          <div class="treatment-info"><div><h3>Glow Body Ritual</h3><p>A renewing exfoliation ritual that leaves skin feeling soft and refreshed.</p></div><span class="duration">45 / 60 MIN</span></div>
+        </article>
+        <article class="treatment-card">
+          <div class="treatment-photo photo-four"><span class="number">04</span></div>
+          <div class="treatment-info"><div><h3>Couple's Escape</h3><p>Share a peaceful pause with a relaxing side-by-side spa experience.</p></div><span class="duration">60 / 90 MIN</span></div>
+        </article>
+      </div>
+      <p class="treatment-footnote">Treatment availability and duration may vary. Please contact the spa team for the current menu and rates.</p>
+    </section>
+
+    <section class="ritual" id="ritual">
+      <div class="ritual-image"></div>
+      <div class="ritual-content">
+        <p class="eyebrow light">THE ÉLAN APPROACH</p>
+        <h2>Quiet luxury.<br><em>Meaningful care.</em></h2>
+        <p>We believe the best experiences never need to be hurried. Our therapists take time to understand what you need, then tailor each session to help you leave feeling lighter.</p>
+        <a class="button button-outline" href="#booking">Plan your spa visit <span>↗</span></a>
+        <div class="ritual-signature">A little space to feel like yourself again.</div>
+      </div>
+    </section>
+
+    <section class="booking section" id="booking">
+      <div class="booking-copy">
+        <p class="eyebrow">YOUR STAY, YOUR SANCTUARY</p>
+        <h2>Make room for<br><em>well-being.</em></h2>
+        <p>Share your preferred treatment and a few details from your stay. Our spa team will confirm availability with you.</p>
+        <div class="booking-note"><span class="lock">⌑</span><div><strong>Hotel guests only</strong><small>For the comfort and privacy of our guests, spa reservations are available to registered in-house guests only. Guest details are used to verify eligibility.</small></div></div>
+      </div>
+      <form class="booking-form" id="bookingForm">
+        <div class="form-top"><span>SPA ENQUIRY</span><span>01 — 04</span></div>
+        <div class="field-row"><label>YOUR NAME<input name="name" type="text" placeholder="As shown on your hotel booking" required></label><label>ROOM NUMBER<input name="room" type="text" placeholder="e.g. 508" required></label></div>
+        <label>HOTEL NAME<input name="hotel" type="text" placeholder="Name of the hotel" required></label>
+        <div class="field-row"><label>CHOOSE A TREATMENT<select name="treatment" required><option value="">Select treatment</option><option>Signature Massage</option><option>Deep Tissue Therapy</option><option>Glow Body Ritual</option><option>Couple's Escape</option><option>I'd like a recommendation</option></select></label><label>PREFERRED DURATION<select name="duration" required><option value="">Select duration</option><option>45 minutes</option><option>60 minutes</option><option>90 minutes</option></select></label></div>
+        <div class="field-row"><label>PREFERRED DATE<input name="date" type="date" required></label><label>PREFERRED TIME<input name="time" type="time" required></label></div>
+        <label>ANYTHING WE SHOULD KNOW? <span class="optional">(OPTIONAL)</span><textarea name="notes" rows="3" placeholder="Your preferences or special requests"></textarea></label>
+        <label class="consent"><input type="checkbox" required><span>I confirm that I am currently staying at the hotel and agree to be contacted about this spa enquiry.</span></label>
+        <button class="button button-dark" type="submit">Send booking enquiry <span>↗</span></button>
+        <p class="form-disclaimer">This form is a front-end enquiry demonstration. It does not create a confirmed reservation or transmit details to the hotel.</p>
+        <div class="form-message" id="formMessage" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">É</span><span>ÉLAN <small>HOTEL SPA</small></span></a>
+    <p>A private pause, reserved for your stay.</p>
+    <div class="footer-bottom"><span>© 2026 ÉLAN HOTEL SPA</span><span>EXCLUSIVELY FOR IN-HOUSE HOTEL GUESTS</span><a href="#home">BACK TO TOP ↑</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
